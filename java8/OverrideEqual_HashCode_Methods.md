@@ -14,7 +14,7 @@
 **Note: Equal objects must produce the same hash code as long as they are equal, however unequal objects need not produce distinct hash codes.**
 
 ###  Case 1: Override Equal Methods Only
-```java
+```
 @Override
     public boolean equals(Object obj)
     {
