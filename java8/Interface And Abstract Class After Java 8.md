@@ -21,3 +21,5 @@ All members of interfaces are public by default. Interfaces don’t support priv
 #### 5) Multiple Inheritance
 
 A class can extend only one abstract class, but can implement multiple interfaces. Thus, a class can inherit multiple properties from multiple sources only through interfaces, not through abstract classes.
+
+![image](https://user-images.githubusercontent.com/48176482/147869651-a23f85c8-351d-442c-9104-d17d0aa7fd40.png)
