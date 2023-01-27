@@ -1,0 +1,32 @@
+HashMap<String, Integer> hm = new HashMap<String, Integer>();
+
+        hm.put("Math", 98);
+
+        hm.put("Data Structure", 85);
+
+        hm.put("Database", 91);
+
+        hm.put("Java", 95);
+
+        hm.put("Operating System", 79);
+
+        hm.put("Networking", 80);
+
+       
+
+        List <Entry<String, Integer>> capitalList = new LinkedList<>(hm.entrySet()); 
+
+        System.out.println();
+
+        for(Entry<String, Integer> en:capitalList) {
+
+        System.out.println(en.getKey()+"->"+en.getValue());
+
+        }
+
+        Collections.sort(capitalList,(l1,l2) -> l1.getValue().compareTo(l2.getValue())); //By Value
+
+        Collections.sort(capitalList,(l1,l2) -> l1.getKey().compareTo(l2.getKey())); //By Value
+
+       
+
