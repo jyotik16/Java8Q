@@ -87,3 +87,42 @@ IT
 
 In this case we override both methods properly.
 When we call **map.put(g1, “CSE”);** it will hash to some bucket location and when we call **map.put(g2, “IT”);**, it will generates same hashcode value (same as g1) and replace first value by second value because while iterating over same bucket it found a k such that k.equals(g2) is true, means searching key already exist. So, it replaces old value of that key by new value.
+
+
+
+---
+```
+**In case not override any equals and hashcode method**
+HashMap<Employee,Integer> hm = new HashMap<>();
+        List<Employee> ll = new ArrayList<>();
+        Employee e1 = new Employee(111, "Jiya Brein", 32, "Female", "HR", 2011, 250000.0);
+        Employee e2 = new Employee(111, "Jiya Brein", 32, "Female", "HR", 2011, 250000.0);
+        ll.add(e1);
+        ll.add(e2);
+
+        hm.put(e1,1);
+        hm.put(e2,2);
+        System.out.println("hm.get(e1):"+hm.get(e1)); //1
+        System.out.println("hm.get(e2):"+hm.get(e2)); //1
+        System.out.println(hm.size()); //2
+
+```
+---
+```
+**In case  override any equals and hashcode method**
+HashMap<Employee,Integer> hm = new HashMap<>();
+        List<Employee> ll = new ArrayList<>();
+        Employee e1 = new Employee(111, "Jiya Brein", 32, "Female", "HR", 2011, 250000.0);
+        Employee e2 = new Employee(111, "Jiya Brein", 32, "Female", "HR", 2011, 250000.0);
+        ll.add(e1);
+        ll.add(e2);
+
+        hm.put(e1,1);
+        hm.put(e2,2);
+        System.out.println("hm.get(e1):"+hm.get(e1)); //2
+        System.out.println("hm.get(e2):"+hm.get(e2)); //2
+        System.out.println(hm.size()); //1 ...
+
+```
+
+
