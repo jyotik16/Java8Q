@@ -105,9 +105,9 @@ Fisrt Round:
 4. what is stream API 
 5. Predicate interface 
 6. Singleton design pattern.
-7. what is concurrenct hasmap and hashmap 
+7. what is concurrenct-hasmap and hashmap 
 8. seriliazations in java & uses
-9. how to parse Json.
+9. how to parse Json. //https://www.baeldung.com/jackson-object-mapper-tutorial
 10.Tempalte design pattern.
 11. what is changes in hashmap in java 1.8.
 12. what is json and uses
@@ -182,7 +182,7 @@ Design Schema design and component design and how you manager orders.
 ======================================================================================
 
 
-Programming Questions : Attra
+Programming Questions: Attra
 
 1. String[] s = 100,200,300,400
 
@@ -191,7 +191,7 @@ maximum possible consecutive sum for k elements :
 
 2. Array  : { 3, 1,2,3,5,8,9 }  remove the duplicates and shift duplicated elements to last : 1,2,3,5,8,9,3
 
-3. Find the first non repatable character -  Exanple : total   o/p :o
+3. Find the first non-repatable character -  Exanple : total   o/p :o
 
 4. 14. For following daily stock prices(for 10 days) : 
 
@@ -219,14 +219,14 @@ Conditions:
 
 12. Array having binary numbers which has thousands of elements , shift all 0's to left side of the array and shift all 1's to right side of the array.
 
-13. find the inresection of two linked list.
+13. find the intresection of two linked list.
 
 14. implement linked list in java .
 
 
 ++++++++++++++++++++++Global-Logic+++++++++++++++++++++++++++++
 
-1. What is an Immutable class?
+1. What is an Immutable class?   //https://www.digitalocean.com/community/tutorials/how-to-create-immutable-class-in-java
 2. create custom Immutable class?
 3. Question on Multithreading
 4. Questin on Exception Handling
